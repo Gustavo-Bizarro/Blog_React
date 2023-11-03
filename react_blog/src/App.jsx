@@ -2,6 +2,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import './App.css'
 
+// contest
+import { AuthProvider } from "./context/AuthContext"
+
 // pages
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
@@ -15,7 +18,8 @@ import Login from "./pages/Login/Login"
 function App() {
   return (
     <>
-    <BrowserRouter>
+<AuthProvider>
+<BrowserRouter>
     <Navbar />
 <div className="container">
       <Routes>
@@ -27,6 +31,7 @@ function App() {
 </div>
 <Footer />
     </BrowserRouter>
+</AuthProvider>
     
     </>
   )

@@ -1,4 +1,4 @@
-import {db} from'../firebase/config'
+import {db} from '../firebase/config'
 import {
     getAuth,
     createUserWithEmailAndPassword,
@@ -57,10 +57,11 @@ import {
           systemErrorMessage = "Ocorreu um erro, por favor tenta mais tarde.";
         }
   
+        setLoading(false);
         setError(systemErrorMessage);
       }
   
-      setLoading(false);
+      
     };
   
     const logout = () => {

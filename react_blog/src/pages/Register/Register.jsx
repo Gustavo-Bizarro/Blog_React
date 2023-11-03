@@ -28,10 +28,10 @@ const Register = () => {
       setError("As senhas precisam ser iguais.");
       return;
     }
-    console.log(user);
 
     const res = await createUser(user);
 
+    console.log(user);  
     console.log(res);
   };
 
