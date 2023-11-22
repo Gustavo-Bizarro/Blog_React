@@ -89,7 +89,7 @@ const Register = () => {
         <span>Confirme sua senha:</span>
         <input 
         type="password" 
-        name='confirmPassword' 
+        name='confirmPassword'
         required 
         placeholder='Confirme a sua senha'
         value={confirmPassword} 
@@ -97,7 +97,7 @@ const Register = () => {
         />
       </label>
       {!loading && <button className='btn'>Cadastrar</button>}
-      {loading && <button className='btn' disabled>Aguarde .....</button>}
+      {loading && <button className='btn' disabled>Aguarde ......</button>}
       {error && <p className='error'>{error}</p>}
     </form>
 
